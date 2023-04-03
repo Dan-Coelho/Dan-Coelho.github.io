@@ -1,0 +1,57 @@
+@charset "UTF-08";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --c13: #171717;
+  --c12: #292929;
+  --c11: #3b3b3b;
+  --c10: #4d4d4d;
+  --c09: #5c5c5c;
+  --c08: #6e6e6e;
+  --c07: #808080;
+  --c06: #999999;
+  --c05: #ababab;
+  --c04: #c9c9c9;
+  --c03: #e0e0e0;
+  --c02: #ededed;
+  --c01: #fafafa;
+  --p01: #47884a;
+}
+body {
+  font-family: "fira sans", arial, sans-serif;
+  color: var(--c13);
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.subtitulo {
+  font-size: 7rem;
+  line-height: 1;
+  letter-spacing: 5%;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+@media (max-width: 850px) {
+  .subtitulo {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .subtitulo {
+    font-size: 3.2rem;
+    word-break: normal;
+    text-indent: 2ch;
+  }
+}
+@media (max-width: 450px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+}

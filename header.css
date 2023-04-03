@@ -1,0 +1,44 @@
+@charset "UTF-08";
+
+.header {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+.header-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.header-menu li {
+  list-style: none;
+}
+.header-menu li a {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--c13);
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+.header-menu li a:hover {
+  font-size: 1.7rem;
+  color: var(--p01);
+}
+@media (max-width: 850px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a {
+    background-color: var(--c02);
+    border-radius: 4px;
+  }
+}

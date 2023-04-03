@@ -1,0 +1,128 @@
+@charset "UTF-08";
+
+.experiencia {
+  max-width: 1440px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+  background-color: var(--c03);
+  border-radius: 10px;
+}
+.experiencia div {
+  justify-self: center;
+  align-self: center;
+  padding: 40px 0;
+  position: relative;
+  max-width: 500px;
+  left: 3%;
+}
+
+.experiencia .subtitulo {
+  color: var(--c10);
+}
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: var(--c02);
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+.empresa-ano {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  color: var(--c06);
+  font-size: 0.7rem;
+}
+.empresa-titulo {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--c10);
+  margin-left: 15px;
+}
+.empresa p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #000;
+  max-width: 30ch;
+  margin-left: 15px;
+}
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+  list-style: none;
+}
+.empresa-habilidades li {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--p01);
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+.empresa-habilidades li:last-child {
+  margin-right: 15px;
+}
+@media (max-width: 1000px) {
+  .experiencia {
+    gap: 10px;
+  }
+  .empresa {
+    left: 80px;
+  }
+  .empresa-titulo {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  .empresa p {
+    font-size: 0.75rem;
+    margin-left: 5px;
+    max-width: 15ch;
+  }
+  .empresa-habilidades {
+    gap: 5px;
+  }
+  .empresa-habilidades li {
+    font-size: 0.5rem;
+    padding: 3px 5px;
+  }
+  .experiencia div {
+    padding: 20px;
+    left: 8%;
+  }
+}
+@media (max-width: 850px) {
+  .empresa {
+    grid-template-columns: 1fr;
+    left: -10px;
+    gap: 10px;
+  }
+  .empresa h3 {
+    font-size: 1.3rem;
+  }
+  .empresa p {
+    max-width: 25ch;
+  }
+  .experiencia div {
+    justify-self: start;
+    left: 20%;
+  }
+}
+@media (max-width: 600px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    margin: auto;
+  }
+}
