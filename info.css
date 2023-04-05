@@ -58,4 +58,7 @@
   .intro img {
     display: none;
   }
+  .intro div {
+    left: 10px;
+  }
 }

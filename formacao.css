@@ -66,5 +66,6 @@
 @media (max-width: 450px) {
   .formacao-texto {
     font-size: 0.9rem;
+    left: 20px;
   }
 }

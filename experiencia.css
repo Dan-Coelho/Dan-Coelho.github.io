@@ -125,4 +125,8 @@
     padding: 20px;
     margin: auto;
   }
+  .experiencia div {
+    max-width: 350px;
+    left: 15%;
+  }
 }

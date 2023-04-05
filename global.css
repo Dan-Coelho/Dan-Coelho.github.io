@@ -48,11 +48,12 @@ img {
   .subtitulo {
     font-size: 3.2rem;
     word-break: normal;
-    text-indent: 2ch;
+    text-align: center;
+    max-width: 100%;
   }
 }
 @media (max-width: 450px) {
   .subtitulo {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
